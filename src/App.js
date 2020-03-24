@@ -11,7 +11,8 @@ function App() {
       </header>
       <div className="Quotes">
         {" "}
-        <Quote />{" "}
+        <Quote text="aaaaaa" />{" "}
+        {" Covid-19 is afraid of being caught by Chuck Norris"}
       </div>
     </div>
   );
