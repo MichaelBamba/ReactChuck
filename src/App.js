@@ -4,7 +4,7 @@ import Quote from "./components/quote";
 import "./App.css";
 
 function App() {
-  const theQuote = "Covid-19 is afraid of being caught by Chuck Norris";
+  const theQuote = "is static";
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +12,7 @@ function App() {
       </header>
       <div className="Quotes">
         {" "}
-        <Quote quote={theQuote} />{" "}
+        <Quote />{" "}
       </div>
     </div>
   );
