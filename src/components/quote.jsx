@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
 class Quote extends Component {
+  state = {
+    quote: "fetching a quote"
+  };
   render() {
-    const { quote } = "Covid 19 is afraid of being caught by Chuck";
+    const { quote } = this.state;
     return <p> {quote} </p>;
   }
 }
