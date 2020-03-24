@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class Quote extends Component {
   render() {
-    return <div className="Quotes" text={{ text: this.props.text }}></div>;
+    const { quote } = this.props;
+    return <p> {quote} </p>;
   }
 }
 export default Quote;
