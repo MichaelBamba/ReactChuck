@@ -4,9 +4,24 @@ class Quote extends Component {
   state = {
     quote: "fetching a quote"
   };
+
+  async componentDidMount() {
+    try {
+      const response = await fetch("https://api.chucknorris.io/jokes/random");
+      const data = await response.json();
+      this.setState({
+        quote: data.value
+      });
+    } catch (error) {
+      this.setState({
+        quote: error.message
+      });
+    }
+  }
+
   render() {
     const { quote } = this.state;
-    return <p> {quote} </p>;
+    return <p>{quote}</p>;
   }
 }
 export default Quote;
